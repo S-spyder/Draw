@@ -20,6 +20,7 @@ canvasColor.addEventListener('change', (event) => {
     ctx.fillRect(0, 0, 800, 500);
 });
 
+// start drawing using mouse
 canvas.addEventListener('mousedown', (event) => {
     isDrawing = true;
     lastX = event.offsetX;
@@ -40,6 +41,7 @@ canvas.addEventListener('mousemove', (event) => {
     }
 });
 
+// start drawing using touch
 canvas.addEventListener('touchstart', (event) => {
     isDrawing = true;
     lastX = event.touches[0].clientX;
